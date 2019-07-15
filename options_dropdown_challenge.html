@@ -79,22 +79,16 @@
               margin-left: 20%;
             }
 
-            input:checked+label:before{
+            input:checked+label div{
               transform: translateX(-30px);
 
             }
-            input:checked+label:after{
-                content: "ON";
-                font-style: italic;
+            
+            input:checked+label div:after{
+                content: " ON";
                 color: white;
-
-                padding-left: 350px;
-                padding-bottom: 1000px;
-
-                }
-                input:checked+label div:after{
-                            content: " ON";
-                }
+                font-style: italic;
+            }
 
 
 

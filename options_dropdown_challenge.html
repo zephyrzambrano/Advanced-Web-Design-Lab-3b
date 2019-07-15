@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Options!</h1>
-        
+
         <div id="optDrop">
             <ul class="dropdown">
                 <li class="dropdown-tag">Dropdown</li>
@@ -25,12 +25,12 @@
                 </ul>
             </ul>
         </div>
-        
+
         <style>
                 h1{
                 display: none;
             }
-            
+
             li{
                 list-style: none;
             }
@@ -38,7 +38,7 @@
             input{
                 display: none;
             }
-            
+
             .dropdown-tag {
                 color: white;
                 background-color: blue;
@@ -46,21 +46,21 @@
                 text-align:center;
                 width: 20%;
             }
-            
+
             .dropdown-content {
                 display: none;
                 background: white;
                 width: 40%;
                 box-shadow: 5px 5px 10px lightgray;
             }
-            
-            
+
+
             .dropdown:hover .dropdown-content {
                 display: block;
 
             }
-            
-           
+
+
             .dropdown-content li{
                 border: 5px solid lightgrey;
                 border-radius: 50%;
@@ -69,7 +69,7 @@
                 font-size: 30px;
 
             }
-            
+
             li div {
               transition: .4s;
               border-radius: 20%;
@@ -87,14 +87,18 @@
                 content: "ON";
                 font-style: italic;
                 color: white;
-                
+
                 padding-left: 350px;
                 padding-bottom: 1000px;
-    
-                
-    
-                
+
+                }
+                input:checked+label div:after{
+                            content: " ON";
+                }
+
+
+
             </style>
-        
+
     </body>
 </html>

@@ -27,38 +27,80 @@
         </div>
         
         <style>
-            li{
-                list-style: none;
-            }
-
-            input{
-                display: none;
-            }
-            
-            .dropdown-tag {
-                color: white;
-                background-color: blue;
-                margin-right: 550px;
-            }
-            
-            .dropdown-content {
-                display: none;
-                background: lightgray;
-            }
-            
-            .dropdown:hover .dropdown-content {
-                display: block;
-            }
-            
-            #option1 {
-                background: blue;
-            }
-            
-            #option1::after {
-                content: "ON";
-            }
-            
-        </style>
+                h1{
+                    display: none;
+                }
+                li{
+                    /*list-style: none;*/
+                }
+    
+                input{
+                    display: none;
+                }
+                
+                .dropdown-tag {
+                    color: white;
+                    background-color: blue;
+                    font-size: 50px;
+                    text-align:center;
+                    width: 30%;
+    
+                    
+                }
+                
+                .dropdown-content {
+                    display: none;
+                    background: white;
+                    position: relative;
+                    width: 40%;
+                    box-shadow: 5px 5px 5px lightgray;
+                }
+                
+                
+                .dropdown:hover .dropdown-content {
+                    display: block;
+    
+                }
+                
+               
+                .dropdown-content li{
+                    border: 5px solid lightgrey;
+                    border-radius: 50%;
+                    background-color: forestgreen;
+                    width:40%
+    
+                }
+                li div {
+                background-color: #ccc;
+                transition: .4s;
+                color:red;
+                border-radius: 20%;
+                width:80%;
+                
+                            }
+                
+                li div:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                transition: .4s;
+                }
+                
+                input:checked + div {
+                background-color: #2196F3;
+                }
+                
+                
+                input:checked + div:before {
+                transform: translateX(30px);
+                }
+                
+                
+            </style>
         
     </body>
 </html>

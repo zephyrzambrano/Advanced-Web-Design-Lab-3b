@@ -5,7 +5,7 @@
     </head>
     <body>
         <h1>Options!</h1>
-
+        
         <div id="optDrop">
             <ul class="dropdown">
                 <li class="dropdown-tag">Dropdown</li>
@@ -25,6 +25,7 @@
                 </ul>
             </ul>
         </div>
+<<<<<<< HEAD
 
         <style>
             
@@ -93,15 +94,87 @@
                   transform: translateX(-30px);
                  box-shadow: 30px 0px green;                
     
+=======
+        
+        <style>
+            
+            h1{
+                display: none;
+            }
+            
+            li{
+                list-style: none;
+            }
+
+            input{
+                display: none;
+            }
+            
+            .dropdown-tag {
+                color: white;
+                background-color: blue;
+                font-size: 50px;
+                text-align:center;
+                width: 30%;
+            }
+            
+            .dropdown-content {
+                display: none;
+                background: white;
+                width: 40%;
+                box-shadow: 5px 5px 10px lightgray;
+            }
+            
+            
+            .dropdown:hover .dropdown-content {
+                display: block;
+
+            }
+            
+            
+            .dropdown-content li{
+                    border: 5px solid lightgrey;
+                    border-top-left-radius: 20px;
+                    background-color: red;
+                    width:80%;
+                    font-size: 30px;
+                    margin: 0;
+                    padding: 0;
+>>>>>>> 6b6515d99a4e285cfa011b21d91b6ec99d31ab90
     
                 }
-                input:checked+label div:after{
-                            content: " ON";
-                }
+            
+            li div {
+              transition: .4s;
+             border-top-left-radius: 20px;
+              width:80%;
+              background-color: grey;
+              transition: .4s;
+              box-shadow: -30px 0px red;                
+              font-size: 30px;
+
                 
+<<<<<<< HEAD
     
                 
             </style>
+=======
+            }
+>>>>>>> 6b6515d99a4e285cfa011b21d91b6ec99d31ab90
 
+            input:checked+label div{
+              transform: translateX(-30px);
+             box-shadow: 30px 0px green;                
+
+
+            }
+            input:checked+label div:after{
+                        content: " ON";
+            }
+            
+
+            
+        </style>
+        
     </body>
 </html>
